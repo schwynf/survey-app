@@ -11,7 +11,7 @@
     "start": "node server.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run start\" \"npm run client\"",
-    "build": "cd client && npm i && npm run build",
+    "build": "node server.js && cd client && npm i && npm run build",
     "heroku-postbuild": "npm run build"
   },
   "author": "",
